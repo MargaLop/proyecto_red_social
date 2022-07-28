@@ -1,18 +1,12 @@
-const mongoose = require('mongoose');
+require('./connection');
 
-const uri = 'mongodb://127.0.0.1:27017/rsmargalop'
-const db = mongoose.connection
+const Product = require('./models/places')
 
-mongoose.connect(uri, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
-    .catch(err => console.log(err));
-
-db.once('open', _ => {
-    console.log("Database is conected to", uri)
+const product = new Product({
+    name: 'Madrid',
+    provincia: 'Mdrid',
+    codPostal: 20555,
+    description: 'Capital de España'
 });
 
-db.on('error', err => {
-    console.log(err)
-});
+console.log(product);
