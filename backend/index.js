@@ -6,7 +6,11 @@ const product = new Product({
     name: 'Madrid',
     provincia: 'Mdrid',
     codPostal: 20555,
-    description: 'Capital de España'
+    description: 'Capital de España, rica agua, buena agua'
 });
 
-console.log(product);
+//asincrono
+product.save((err,document) => {
+    if (err) console.log(err);
+    console.log(document)
+});

@@ -8,6 +8,6 @@ const placeSchema = new Schema({
         default: 0
     },
     description: String
-})
+});
 
-module.exports = model('Places', placeSchema)
+module.exports = model('Places', placeSchema);
