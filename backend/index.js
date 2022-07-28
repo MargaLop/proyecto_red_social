@@ -1,20 +1,15 @@
-'use strict'
+const mongoose = require('mongoose');
 
-var mongoose = require('mongoose');
+const uri = 'mongodb://127.0.0.1:27017/rsmargalop'
 
-var app = require('./app');
-var port = 3700;
+mongoose.connect(uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
 
-mongoose.Promise = global.Promise;
-
-mongoose.connect('mongodb://localhost:27017/myApp')
-    .then(() => {
-        console.log("coneccion a la BD joya");
-
-        //creacion del servidor
-        app.listen(port, () => {
-            console.log("Servidor corriendo correto");
-        });
-
-    })
-    .catch(err => console.log(err));
+mongoose.connect(uri) 
+        .then(() => { 
+			console.log("La conexión a la base de datos realizada conrrectamente!!!")
+        })
+        .catch(err => console.log(err));
+		
