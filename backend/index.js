@@ -5,7 +5,8 @@ const Product = require('./models/places')
 const product = new Product({
     name: 'Madrid',
     provincia: 'Mdrid',
-    codPostal: 20555,
+    lat: 20555,
+    long: 1234,
     description: 'Capital de España, rica agua, buena agua'
 });
 
