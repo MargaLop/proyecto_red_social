@@ -2,3 +2,11 @@ body
 {
     background-color: rgb(8, 74, 118);
 }
+
+#map 
+    { 
+    width: 75%;
+    height: 580px;
+    justify-content: center;
+    margin: auto;
+}
