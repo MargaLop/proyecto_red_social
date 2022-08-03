@@ -1,12 +1,62 @@
-body
-{
-    background-color: rgb(8, 74, 118);
+*{
+    margin: 0;
+    padding: 0;
 }
 
-#map 
-    { 
-    width: 75%;
-    height: 580px;
+body{
+    background-color: rgb(235, 238, 240);
+}
+
+/* heather*/
+input{ 
+    width: 85%;
+    justify-content: center;
+    margin: auto;
+    font-size: 150%; 
+    top: 0;
+    width: 35%;
+} 
+
+button{
+    background: #F4CA35;
+    color: #073590;
+    font-size: 150%; 
+    width: 20%;
+
+}
+
+.father-container{
+    margin: 12px;
+    margin-left: 50px;
+    justify-content: center;
+    
+    }
+
+.title{
+    color: rgb(235, 238, 240);
+    justify-content: center;
+    margin: auto;
+    display: block;
+}
+
+.travel{
+    
+    background: linear-gradient(to right,#073590,#0d49c0);
+    display: block;
+    flex-shrink: 0;
+    margin-bottom: 2rem;
+    overflow: visible;
+    padding-bottom: 0.625rem;
+    padding-top: 0.0625rem;
+    width: 100%;
+}
+
+/*body*/
+
+#map { 
+    width: 85%;
+    height: 500px;
+    top: 0px;
     justify-content: center;
     margin: auto;
 }
