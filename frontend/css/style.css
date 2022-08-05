@@ -9,34 +9,51 @@ body{
 
 /* heather*/
 input{ 
-    width: 85%;
+    width: 100%;
     justify-content: center;
     margin: auto;
     font-size: 150%; 
     top: 0;
     width: 35%;
+    padding: 0px 10px;
+
+    box-sizing: border-box;
 } 
 
 button{
     background: #F4CA35;
     color: #073590;
     font-size: 150%; 
-    width: 20%;
+    width: 100%;
 
 }
 
-.father-container{
-    margin: 12px;
-    margin-left: 50px;
-    justify-content: center;
+.father-container{  
+    padding-top: 15px;
+    padding-bottom: 10px;
+    width: 85vw;
+    margin: auto;
     
-    }
+}
+
+.content-tittle{
+    width: 97%;
+    padding-top: 10px;
+    margin: auto;
+
+}
+
+.logo{
+    width: 45px;
+    height: 45px;
+
+}
 
 .title{
     color: rgb(235, 238, 240);
-    justify-content: center;
-    margin: auto;
+    text-align: left;
     display: block;
+    padding-left: 7px;
 }
 
 .travel{
@@ -55,7 +72,7 @@ button{
 
 #map { 
     width: 85%;
-    height: 500px;
+    height: 450px;
     top: 0px;
     justify-content: center;
     margin: auto;
