@@ -4,8 +4,9 @@ const port = process.env.PORT || 3000;
 
 app.use('/', express.static('./frontend'));
 
-app.post("/", (req, res) => {
-  console.log('holiiiiiiiiiiiiiiii')
+app.get("/busqueda", (req, res) => {
+  console.log(req.query.km);
+  console.log(req.query.place);
 });
 
 app.listen(port, () => {
