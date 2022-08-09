@@ -8,14 +8,14 @@ body{
 }
 
 /* heather*/
-input{ 
+input, select{ 
     width: 100%;
     justify-content: center;
     margin: auto;
     font-size: 150%; 
     top: 0;
     width: 35%;
-    padding: 0px 10px;
+    padding: 0px 5px;
 
     box-sizing: border-box;
 } 
