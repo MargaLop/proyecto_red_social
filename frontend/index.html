@@ -17,11 +17,30 @@
         </div>
         <form action="" method="post" id="frmsearch"></form>
         <div class="d-flex justify-content-between father-container">
-            
-            <input class="col-5" type="text" id="tbox-place" name="text-box" placeholder="Lugar de origen">
+            <select ng-model="comunidad" ng-options="comunidad.COM for comunidades" class="col-5" id="tbox-place" name="text-box" placeholder="Lugar de origen">  
+                <option value="" class="">Selecciona origen</option>
+                <option value="0" label="ANDALUCÍA">ANDALUCÍA</option>
+                <option value="1" label="ARAGÓN">ARAGÓN</option>
+                <option value="2" label="PRINCIPADO DE ASTURIAS">PRINCIPADO DE ASTURIAS</option>
+                <option value="3" label="ISLAS BALEARES">ISLAS BALEARES</option>
+                <option value="4" label="CANARIAS">CANARIAS</option>
+                <option value="5" label="CANTABRIA">CANTABRIA</option>
+                <option value="6" label="CASTILLA-LA MANCHA">CASTILLA-LA MANCHA</option>
+                <option value="7" label="CASTILLA Y LEÓN">CASTILLA Y LEÓN</option>
+                <option value="8" label="CATALUÑA">CATALUÑA</option>
+                <option value="9" label="COMUNIDAD VALENCIANA">COMUNIDAD VALENCIANA</option>
+                <option value="10" label="EXTREMADURA">EXTREMADURA</option>
+                <option value="11" label="GALICIA">GALICIA</option>
+                <option value="12" label="LA RIOJA">LA RIOJA</option>
+                <option value="13" label="MADRID">MADRID</option>
+                <option value="14" label="NAVARRA">NAVARRA</option>
+                <option value="15" label="PAÍS VASCO">PAÍS VASCO</option>
+                <option value="16" label="MURCIA">MURCIA</option>
+                <option value="17" label="CEUTA">CEUTA</option>
+                <option value="18" label="MELILLA">MELILLA</option>
+            </select>
             <input class="col-5" type="text"  id="tbox-km" name="text-box" placeholder="Distancia deseada">
             <button class="col-2" id="btn-buscar" type="button" class="btn">BUSCAR</button>
-            
         </div>
         </form>
     </div>
