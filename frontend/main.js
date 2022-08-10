@@ -12,5 +12,5 @@ document
     .addEventListener("click", searchElements);
 
 function selectCommunities(){
-
+    
 }
