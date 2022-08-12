@@ -16,8 +16,8 @@
             <h1 class ="title">DE IDA Y VUELTA</h1>
         </div>
         <form action="" method="post" id="frmsearch"></form>
-        <div class="d-flex justify-content-between father-container">
-            <select ng-model="comunidad" ng-options="comunidad.COM for comunidades" class="col-5" id="tbox-place" name="text-box" placeholder="Lugar de origen">  
+        <div class="d-flex justify-content-between father-container search">
+            <select ng-model="comunidad" ng-options="comunidad.COM for comunidades" class="col-5 campo" id="tbox-place" name="text-box" placeholder="Lugar de origen">  
                 <option value="" class="">Selecciona origen</option>
                 <option value="0" label="Álava">Álava</option>
                 <option value="1" label="Albacete">Albacete</option>
@@ -72,8 +72,8 @@
                 <option value="50" label="Zamora">Zamora</option>
                 <option value="51" label="Zaragoza">Zaragoza</option>
             </select>
-            <input class="col-5" type="text"  id="tbox-km" name="text-box" placeholder="Distancia deseada">
-            <button class="col-2" id="btn-buscar" type="button" class="btn">BUSCAR</button>
+            <input class="col-5 campo" type="text"  id="tbox-km" name="text-box" placeholder="Distancia deseada">
+            <button class="col-2" id="btn-buscar" type="button">BUSCAR</button>
         </div>
         </form>
     </div>

@@ -7,16 +7,34 @@ body{
     background-color: rgb(235, 238, 240);
 }
 
-/* heather*/
+/* tittle*/
+.content-tittle{
+    width: 97%;
+    padding-top: 10px;
+    margin: auto;
+}
+
+.logo{
+    width: 45px;
+    height: 45px;
+}
+
+.title{
+    color: rgb(235, 238, 240);
+    text-align: left;
+    display: block;
+    padding-left: 7px;
+}
+
+/*search*/
 input, select{ 
     width: 100%;
     justify-content: center;
     margin: auto;
     font-size: 150%; 
-    top: 0;
+    top: 10px;
     width: 35%;
     padding: 0px 5px;
-
     box-sizing: border-box;
 } 
 
@@ -25,10 +43,22 @@ button{
     color: #073590;
     font-size: 150%; 
     width: 100%;
+    border: none;
+    height: 98%;
+    overflow: hidden;
 }
 
 button:active{
     background: #fcb900;
+}
+
+.campo{
+    height: 100%;
+}
+
+.search{
+    display: flex;
+    height: 62px;
 }
 
 .father-container{  
@@ -36,27 +66,6 @@ button:active{
     padding-bottom: 10px;
     width: 85vw;
     margin: auto;
-    
-}
-
-.content-tittle{
-    width: 97%;
-    padding-top: 10px;
-    margin: auto;
-
-}
-
-.logo{
-    width: 45px;
-    height: 45px;
-
-}
-
-.title{
-    color: rgb(235, 238, 240);
-    text-align: left;
-    display: block;
-    padding-left: 7px;
 }
 
 .travel{
@@ -71,7 +80,7 @@ button:active{
     width: 100%;
 }
 
-/*body*/
+/*map*/
 
 #map { 
     width: 85%;
