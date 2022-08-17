@@ -1,9 +1,4 @@
 var selectCity = document.getElementById("select-cities");
-var searchCoordCity = selectCity.addEventListener('change', (event) => {
-idCity = selectCity.value
-var coordsCity = jsonCities[idCity].coord
-console.log(coordsCity)
-});
 
 /*No es la solucion definitiva, es una prueba,
 en un futuro se hara la llamada asincrona*/
@@ -166,3 +161,11 @@ const jsonCities = [
 		"coord": [41.6203648019, -1.06449678144]
 	}
 ];
+
+document
+    .getElementById("btn-buscar")
+    .addEventListener('click', (event) => {
+		var idCity = selectCity.value
+		var coordsCity = jsonCities[idCity].coord
+		console.log(coordsCity)
+		});
