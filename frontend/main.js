@@ -176,6 +176,5 @@ document
 				center: coordsCity, 
 				zoom: 9
 			  }), 
-			zoom:5
 		  });
 	});
