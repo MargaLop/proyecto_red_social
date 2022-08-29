@@ -163,10 +163,13 @@ const jsonCities = [
 ]
 
 document
-    .getElementById("btn-buscar")
-    .addEventListener('click', (event) => {
+ 	.getElementById("btn-buscar")
+ 	.addEventListener('click', (event) => {
 		var idCity = selectCity.value
 		var coordsCity = jsonCities[idCity].coord
+		console.log(coordsCity)
+		var marker = new tt.Marker().setLngLat(coordsCity).addTo(map);
+		var popup = new tt.Popup({ anchor: 'top' })
 		tt.map({ 
 			key: keyMap, 
 			container: "map",
@@ -174,7 +177,9 @@ document
 				key: keyMap, 
 				container: "map",
 				center: coordsCity, 
-				zoom: 9
+				zoom:9,
 			  }), 
-		  });
-	});
+		});
+
+		marker.setPopup(popup).togglePopup()
+});
