@@ -1,4 +1,4 @@
-keyMap= 'your key';
+keyMap= 'NocBIAqP1CrRo5SChfQPN1OIYkkwg6VA';
 coordsInitial = { lat:39.90, lng: -4.6679915}
 
 var map = tt.map({ 
@@ -11,8 +11,6 @@ var map = tt.map({
   minZoom: 3.5,
 }); 
 
-/*No es la solucion definitiva, es una prueba,
-en un futuro se hara la llamada asincrona*/
 const jsonCities = [
 	{
 		"ciudad": "Álava",
