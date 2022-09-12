@@ -16,7 +16,6 @@ document
 			bearing: 0,
 			maxZoom: 21,
 			minZoom: 3.5,
-			style: 'mapbox://styles/mapbox/streets-v11',
 		  }); 
 		var marker = new tt.Marker().setLngLat(coordsCity).addTo(map);
 		var popup = new tt.Popup({ anchor: 'top' }).setText(jsonCities[idCity].ciudad)
